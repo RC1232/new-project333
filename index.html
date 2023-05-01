@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h3>Simple, traffic-based pricing</h3>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+
+      <div class="card">
+  <div class="pageviews">
+          <p><span id="pageView">100K</span> Pageviews</p>
+
+          <div class="amount">
+            <p>$<span id="cost">16</span>.00</p>
+           <p class="time "> /month</p>
+          </div>
+        </div>
+
+        
+
+        <div class="range-slider"><input
+          type="range" id="price-slider"
+          min="0"
+          max="4"
+          step="1"
+          value="3"
+          class="range"
+        />
+        
+<img src="images/icon-slider.svg" class="sliderr" /></div>
+        </div>
+
+        <div class="time">
+          <p>Monthly Billing</p>
+          <div class="option">
+            <div id="option-circle"><label class = "switch">
+              <input type="checkbox" name="Billing" id="billing"> <span class= "toggle-slider"></span></label></div>
+          </div>
+          <p>Yearly Billing </p><p class="discount">-25% </p>
+        </div>
+
+        <div class="list-container">
+          <ul>
+            <li><img src="images/icon-check.svg" />&nbsp&nbsp&nbspWebsites</li>
+            <li>
+              <img src="images/icon-check.svg" />&nbsp&nbsp&nbsp100% data
+              ownership
+            </li>
+            <li>
+              <img src="images/icon-check.svg" />&nbsp&nbsp&nbsp Email reports
+            </li>
+          </ul>
+
+         
+
+          <button class="start">Start my trial</button>
+
+          <a href="#">Start my trial</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

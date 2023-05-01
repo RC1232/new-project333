@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(230, 100%, 99%);
+
+  
+}
+
+input#price-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 0%,
+    hsl(224, 65%, 95%) 100%
+  );
+}
+
+.toggle-slider {
+  position: absolute;
+  background-color: hsl(223, 50%, 87%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25px;
+  transition: all 0.2s ease;
+}
+
+
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  transition: all 0.4s ease-in-out;
+
+  
+}
+
+.switch input:checked + .toggle-slider:before {
+  transform: translateX(25px);
+}
+
+
+
+#price-slider::-webkit-slider-thumb { -webkit-appearance: none; height: 30px; width: 30px; border-radius: 50%; background-color: cadetblue; background-image: url(images/icon-slider.svg); background-repeat: no-repeat; background-position: center; box-shadow: 0px 7px 10px 4px rgba(green
+  )}
+
+ #price-slider::-webkit-slider-thumb :hover{ background-color: rgb(194, 171, 171);}
+
+
+.main {
+  background-color: hsl(230, 100%, 99%);
+  margin: 3rem;
+  text-align: center;
+  padding: 5%;
+  font-family: "Manrope", sans-serif;
+  background-image: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-x: center;
+}
+
+p {
+  color: hsl(225, 20%, 60%);
+  font-size: 14px;
+
+  padding-top: 0%;
+}
+
+.card {
+  color: hsl(225, 20%, 60%);
+  background-color: white;
+}
+
+a:hover{color: brown;}
+
+.discount {
+  background-color: rgb(252, 244, 233);
+  border-radius: 12%;
+  color: coral;
+  font-size: 8px;
+  padding: 1%;
+}
+
+li {
+  list-style-type: none;
+  align-items: center;
+}
+
+button {
+  background-color: hsl(227, 35%, 25%);
+  color: aliceblue;
+  border-radius: 22px;
+  font: 4px;
+  border-style: none;
+  padding: 4%;
+  margin: 8%;
+  width: 150px;
+}
+
+button:hover{color: blueviolet;}
+.range {
+  background-color: hsl(223, 50%, 87%);
+  width: 250px;
+  height: 7px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  margin-left: 15%;
+  transform: translateY(15px);
+}
+
+
+
+.circle {
+  background-color: hsl(174, 86%, 45%);
+  width: 24px;
+  height: 22px;
+  border-radius: 15px;
+  margin-left: 15%;
+  transform: translateX(110px);
+  z-index: 2;
+  opacity: 0;
+}
+
+.option {
+  height: 25px;
+  width: 35px;
+  background-color: rgb(236, 237, 237);
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+ul {
+  padding: 1%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+li {
+  padding: 2%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img .img-circle {
+  z-index: -1;
+  width: 30%;
+}
+
+#billing {opacity:0;}
+
+
+.time {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 2%;
+  
+}
+
+.pageviews {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5%;
+  line-height: 10%;
+}
+
+#option-circle {
+  height: 15px;
+  color: black;
+  background-color: white;
+  width: 15px;
+  z-index: 2;
+  border-radius: 7px;
+  transform: translateY(4px);
+}
+
+@media (min-width: 600px) {
+  .Line {
+    border-color: aqua;
+  }
+
+  .slider .range-slider {
+    transform: translateX(120px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: %;
+  }
+
+  .Line {
+    background-color: hsl(223, 50%, 87%);
+    width: 550px;
+    height: 7px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    margin-left: 15%;
+    transform: translateY(15px);
+  }
+
+  .Line-active {
+    background-color: hsl(174, 77%, 80%);
+    width: 100%;
+    height: 8px;
+    align-items: center;
+    position: fixed;
+  }
+
+  .circle {
+    background-color: hsl(174, 86%, 45%);
+    width: 24px;
+    height: 22px;
+    border-radius: 15px;
+    margin-left: 15%;
+    transform: translateX(250px);
+  }
+
+  .card .pageviews {
+    padding: 4%;
+  }
+}
